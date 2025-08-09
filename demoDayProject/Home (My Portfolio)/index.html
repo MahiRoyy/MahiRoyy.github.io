@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Mahi Roy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="topbar">
+    <div class="logo">
+      <img src="Screen Shot 2025-08-08 at 10.35.44 PM.png" alt="Scheduly Logo" />
+    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="business.html">Scheduly</a>
+    </div>
+  </nav>
+
+  <nav class="subbar">
+    <div class="subbar-content">About Me</div>
+  </nav>
+
+  <div class="home-content">
+    <div class="description-box">
+      <h1 class="description-title">Mahi Roy</h1>
+      <p>
+      I am an incoming freshman at CUNY Hunter College majoring in Computer Science with an interest in Artificial Intelligence and data science. I live in Queens, New York. But I am originally from Bangladesh and moved to the US when I was in 10th grade in high School. I am the first person in my family to go to college. I am an avid-learner who has held several leadership positions in the past. I have a lot of experience working in a team whether it's working together with my peers or leading a group project. I hope to gain more valuable experiences in my life and learn more about the world. 
+
+      </p>
+    </div>
+
+  <div class="profile-circle-container">
+    <img src="8d4aeedc-a450-4b8f-bf68-9478a6bc55f5.JPG" alt="Profile Picture" class="profile-circle" />
+  </div>
+
+
+</div>
+
+  <div class="two-boxes-container">
+    <div class="box">
+      <h2 class="box-title">Education</h2>
+      <h4 class="box-subtitle">CUNY Hunter College</h4>
+      <p>Bachelor of Arts in Computer Science</p>
+      <p>Expected Graduation: May 2029</p>
+    
+     
+      <h4 class="box-subtitle">Newtown High School</h4>
+      <p>High School Diploma</p>
+      <p>Graduated: May 2025</p>
+       <p>Activities and societies: National Honors Society (NHS), Newtown Debate Team- American Debate League (ADL), CTE Engineering, Seal of Biliteracy, Coding Club, Robotics and Innovation Club, Yearbook Club, Badminton Club, Hiking Club and Bengali Club</p>
+    
+      <h2 class="box-title">Hobbies</h2>
+      <p class="box-subtitle">In my free time, I enjoy going out with my friends, trying differnt foods, travelling, playing volleyball, badminton, basketball etc..</p>
+
+     <h2 class="box-title">Connect With Me</h2>
+<p>Email: <a href="mailto:royy.mahii9332@gmail.com">royy.mahii9332@gmail.com</a></p>
+<p>Phone: <a href="tel:+13477763057">(347) 776-3057</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/mahi-roy" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/mahi-roy</a></p>
+<p>GitHub: <a href="https://github.com/MahiRoyy" target="_blank" rel="noopener noreferrer">https://github.com/MahiRoyy</a></p>
+
+    
+    
+    </div>
+
+    <div class="box">
+      <h2 class="box-title">Experiences</h2>
+
+      <h4 class="box-subtitle">KKCF Coding Fellow | The Knowledge House</h4> <p>July 2025 - present</p>
+      <p>(1) Enhancing skills in HTML, CSS, JavaScript, and UX/UI design in a competitive,project-based summer fellowship with 100+ hours of technology and professional development instruction </p>
+
+ <p>(2) Participating in workshops on job interviews, mentorship that includes weekly engagement with professionals </p>
+
+       <p>(3) Delivering virtual presentations of final projects to tech professionals, funders, and community stakeholders  </p>
+
+      
+      <h4 class="box-subtitle">Rural Roots Web Design| DOE Pathfinders CS4ALL Internship</h4> <p>Mar 2025 - Jun 2025</p>
+        <p>(1) Built Websites from Scratch for a non-profit using HTML, CSS and JavaScript on Duda platform </p>
+
+      <p>(2) Worked with SEO (Search Engine Optimization)</p>
+
+      <h4 class="box-subtitle">Connecting Communities| Queens Community House </h4> <p>Nov 2024 - Mar 2025</p>
+        <p>(1) Made their company's website, designed graphics, and managed their social media (eg, Instagram)</p>
+
+      <p>(2) Created a brand guide for each brand using the colors (hex codes)/ fonts in Canva</p>
+
+      
+      
+      
+    </div>
+  </div>
+
+
+
+
+  
+
+  <footer>&copy; 2025 Mahi Roy | Portfolio </footer>
+
+  <script src="script.js"></script>
+
+  <!-- other page content -->
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'flex';
+      }
+    });
+
+    // Optional: close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+  </body>
+  </html>
+
+
+  
+</body>
+
+</html>
