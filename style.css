@@ -12,58 +12,17 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-.topbar {
-  background-color: var(--parchment); /* white */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  position: relative;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  user-select: none;
-  z-index: 1000;
+.navbar-dark.bg-dark {
+  background-color: white !important;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: var(--iron-black);
+.navbar-nav .nav-link {
+  color: #0B1355 !important; /* navy blue */
+  font-weight: 600;           /* optional: makes text a bit bolder */
 }
 
-.hamburger {
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-.menu {
-  position: absolute;
-  top: 50px;
-  right: 20px;
-  background: var(--parchment);
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  display: none;
-  flex-direction: column;
-  min-width: 120px;
-  border-radius: 5px;
-}
-
-.menu a {
-  padding: 10px 20px;
-  text-decoration: none;
-  color: var(--iron-black);
-  border-bottom: 1px solid #eee;
-  font-weight: 600;
-}
-
-.menu a:last-child {
-  border-bottom: none;
-}
-
-.menu a:hover {
-  background-color: var(--forge-red);
-  color: var(--ash-white);
-  transition: background-color 0.3s ease;
+.navbar-nav .nav-link:hover {
+  color: #555555 !important; /* optional: darker gray on hover */
 }
 
 
@@ -141,6 +100,40 @@ footer {
   padding: 0 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.projects-subbar {
+  margin-top: 30px; /* space between two-boxes-container and the new subbar */
+}
+
+.projects-gallery {
+  display: flex;
+  justify-content: space-between; /* spreads boxes evenly */
+  flex-wrap: wrap; /* allows boxes to wrap on smaller screens */
+  gap: 20px;       /* space between boxes */
+  padding: 20px 30px;
+  max-width: 1200px;
+  margin: 0 auto;  /* center the gallery */
+}
+
+.project-box {
+  flex: 1 1 18%;           /* makes each box roughly 18% width */
+  background-color: var(--forge-red); /* light gray */
+  color: var(--iron-black);           /* navy text */
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;    /* remove underline */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+
 
 .subbar-content {
   color: white;
@@ -264,4 +257,186 @@ footer {
   max-width: 2000px; /* controls how wide it can be */
   margin: 0px auto; /* center horizontally with space above/below */
   text-align: center;
+}
+
+/* the big scheduly logo pic in the center below the subbar */
+
+.business-image-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  margin-top: 20px;
+}
+
+.business-image-container img {
+  max-width: 80%;  /* shrink if too big */
+  height: auto;    /* keep proportions */
+  border-radius: 8px; /* optional rounded corners */
+}
+
+.business-title {
+  text-align: center;
+  color: navy;
+  font-size: 2rem; /* Bigger title size */
+  margin-top: 20px;
+}
+
+.business-subtitle {
+  text-align: center;
+  color: navy;
+  font-size: 2rem; /* Bigger title size */
+  margin-top: 200px;
+}
+
+
+.style-guide {
+  text-align: center;
+  color: navy;
+  font-size: 2rem; /* Bigger title size */
+  margin-top: 400px;
+}
+
+.style-guide-container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;  /* shrink if too big */
+  height: auto;    /* keep proportions */
+  border-radius: 8px; /* optional rounded corners */
+}
+
+
+.home-wireframe {
+  text-align: center;
+  color: navy;
+  font-size: 2rem; /* Bigger title size */
+  margin-top: 400px;
+}
+
+.home-wireframe-container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;  /* shrink if too big */
+  height: auto;    /* keep proportions */
+  border-radius: 8px; /* optional rounded corners */
+}
+
+
+/* Bootstrap navbar customization for white background and navy links */
+.navbar-light.bg-white {
+  background-color: white !important; /* navbar background color */
+}
+
+.navbar-light .navbar-brand img {
+  height: 40px; /* logo size */
+  width: auto;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #0B1355 !important; /* navy blue links */
+  font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #555555 !important; /* darker navy/gray hover */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #0B1355 !important; /* active link navy */
+}
+
+
+
+.project-section {
+  padding: 60px 30px;
+  margin: 20px auto;
+  max-width: 1000px;
+  background-color: var(--forge-red); /* light gray background */
+  border-radius: 8px;
+  color: var(--iron-black); /* navy text */
+}
+
+.project-section h2 {
+  text-align: center;
+  color: var(--iron-black);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.project-section p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/* Add space between "Some Projects I Worked On" title bar and gray boxes */
+.projects-subbar {
+  margin-bottom: 60px; /* adjust as needed */
+}
+
+/* Add space between the gray boxes and the next navy blue title bar */
+.projects-gallery {
+  margin-bottom: 60px; /* adjust as needed */
+}
+
+
+
+
+/* Add space between the navy blue title and the gallery */
+.highschool-subbar {
+  margin-bottom: 60px; /* adjust to control space */
+}
+
+/* Gallery container */
+.highschool-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* controls space between columns and rows */
+  padding: 20px 30px;
+  justify-content: center;
+}
+
+/* Gallery item */
+.gallery-item {
+  flex: 0 1 calc(25% - 20px); /* 4 items per row */
+  box-sizing: border-box;
+}
+
+/* Images inside gallery */
+.gallery-item img {
+  width: 100%;
+  height: 200px; /* keep them uniform height */
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .gallery-item {
+    flex: 0 1 calc(33.33% - 20px); /* 3 per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-item {
+    flex: 0 1 calc(50% - 20px); /* 2 per row */
+  }
+}
+
+.section-heading {
+  text-align: center;
+  color: navy;
+  font-size: 2rem;
+  margin-top: 40px; /* much smaller than 400px */
+}
+
+.example-img {
+  max-width: 300px; /* Adjust this for how big you want the square */
+  height: auto;     /* Keeps the original proportion */
+  display: block;
+  margin: 0 auto;   /* Centers it */
 }
